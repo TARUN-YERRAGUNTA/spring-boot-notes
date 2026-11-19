@@ -1,0 +1,13 @@
+spring.application.name=ProdoMeter //This is going to specify the applciation name. This is going to help while logging and monitoring
+
+spring.datasoure.url=jdbc:/postgresql://localhost:5432/ProdoMeter //Considering the name of the databse as Prodmeter, This path is going to connect the database given in the path
+spring.datasource.username=postgres  //specifies the username of the postgreslq
+spring.datasource.password                              =Tarun@999  //specifies the password of the postgres account
+
+sprind.datasouce.driver-class-name=org.postgresql.Driver  // This sprecifies which jdbs driver spring boot shouold use to communicate with postgresql
+
+spring.jpa.hibernate.ddl-auto=update // this needed to be added if we are creating the Tables by using classes. It tells hibernate how to manage database based on the Java Entity classes
+spring.jpa.show-sql=true  //it prints the SQL on the console 
+          example : userRepository.save(user)  -> The console might print "Insert into user_info values()....."
+
+spring.jpa.hibernate.properties.format_sql=true // this property helps the in formating the query for better understability
